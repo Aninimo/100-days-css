@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FF758F;
+}
+
+.grid-template-areas{
+  display: grid;
+}
+
+.box{
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  background: #FF758F;
+  color: #FFF;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.box:hover{
+  box-shadow: inset 2px 2px 4px 1px rgba(0,0,0,0.25);
+		transform: scale(0.95);
+}
+
+.one{
+  grid-area: one;
+}
+
+.two{
+  grid-area: two;
+}
+
+.three{
+  grid-area: three;
+}
+
+.four{
+  grid-area: four;
+}
+
+.grid-template-areas{
+  grid-template-areas:
+    'one two'
+    'three four';
+}
